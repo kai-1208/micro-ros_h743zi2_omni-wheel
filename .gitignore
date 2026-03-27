@@ -1,0 +1,36 @@
+# --- STM32CubeIDE 関連 ---
+Debug/
+Release/
+bin/
+obj/
+*.list
+*.map
+*.elf
+*.hex
+*.bin
+*.launch
+.settings/
+.p6project
+
+# --- STM32CubeMX 関連 ---
+# バックアップファイルなどは除外
+*.bak
+*.sbi
+# MXTmpFiles/ # 必要に応じて追加
+
+# --- micro-ROS 関連 ---
+# Dockerビルドで生成された静的ライブラリ本体とインクルードファイル
+# これらは環境依存のパスを含む可能性があるため、他人が使う際は再度ビルドするのが基本です。
+micro_ros_stm32cubemx_utils/microros_static_library_ide/
+
+# もし以前のCMakeやMakefileの残骸があれば除外
+build/
+Makefile
+CMakeLists.txt.user
+
+# --- OS / エディタ関連 ---
+.DS_Store
+Thumbs.db
+.vscode/
+*~
+*.swp
